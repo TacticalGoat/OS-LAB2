@@ -1,0 +1,6 @@
+grep ICT studentinformation.txt | wc -l
+grep IT studentinformation.txt | sed -e 's/IT/Information Technology/g' > output.txt
+cat studentinformation.txt | grep 1616 | cut -d':' -f 6,7,8 | sed -e 's/:/+/g'| bc | sed -e 's/$/\/3/g' | bc -l
+ls | grep mit | sed -e 's/mit/Manipal Institute Of Technology/g' 
+sed -e '1 s/.*/\U&/g' studentinformation.txt 
+killall -9 wc
